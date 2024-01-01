@@ -1,0 +1,9 @@
+export { HomePage } from "./Home/HomePage";
+export { ProductsPage } from "./Products/ProductsPage";
+export { ProductDetailPage } from "./ProductDetailPage";
+export { LoginPage } from "./LoginPage";
+export { RegisterPage } from "./RegisterPage";
+export { CartPage } from "./Cart/CartPage";
+export { OrderPage } from "./Order/OrderPage";
+export { DashboardPage } from "./Dashboard/DashboardPage";
+export { NotFoundPage } from "./NotFoundPage";
