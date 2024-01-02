@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { toast } from "react-toastify";
+import { getProductDetail } from "../services";
 import { useTitle } from "../hooks/useTitle";
 import { Rating } from "../components";
 import { useCart } from "../context";
-import { getProductDetail } from "../services";
 
 export const ProductDetailPage = () => {
   const { cartList, addToCart, removeFromCart } = useCart();
@@ -48,7 +48,11 @@ export const ProductDetailPage = () => {
         </p>
         <div className="flex flex-wrap justify-around">
           <div className="max-w-xl my-3">
-            <img className="rounded" src={product.image_local} alt={product.name} />
+            <img
+              className="rounded"
+              src={product.image_local}
+              alt={product.name}
+            />
           </div>
           <div className="max-w-xl my-3">
             <p className="text-3xl font-bold text-gray-900 dark:text-slate-200">
