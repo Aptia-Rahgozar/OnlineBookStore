@@ -9,9 +9,6 @@ export async function login(authDetail) {
     requestOptions
   );
 
-  if (!response.ok && response.statusText !== "Bad Request") {
-    throw { message: response.statusText }; //eslint-disable-line
-  }
   const data = await response.json();
 
   if (data.accessToken) {
